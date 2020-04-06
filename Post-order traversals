@@ -1,8 +1,0 @@
-void postorder(struct node *p)
-{
-if(p==NULL)
-return;
-postorder(p->lchild);
-postorder(p->rchild);
-printf("%c",p->info);
-}
