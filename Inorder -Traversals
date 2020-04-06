@@ -1,0 +1,8 @@
+void inorder(struct node *p)
+{
+if(p==NULL)
+return;
+inorder(p->lchild);
+printf("%c",p->info);
+inorder(p->rchild);
+}
